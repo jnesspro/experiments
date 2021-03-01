@@ -1,0 +1,17 @@
+rootProject.name = 'experiments'
+include(
+        'rest-template-client:client',
+        'rest-template-client:client-starter',
+        'rest-template-client:service'
+)
+gradle.settingsEvaluated { settings ->
+    settings.pluginManagement {
+        repositories {
+            mavenCentral()
+            gradlePluginPortal()
+            maven {
+                url 'https://repo.spring.io/plugins-release'
+            }
+        }
+    }
+}
