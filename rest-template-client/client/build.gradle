@@ -3,8 +3,6 @@ plugins {
     id 'java-library'
 }
 
-group = 'com.example'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 configurations {
@@ -24,10 +22,9 @@ dependencyManagement {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-
-    implementation 'org.springframework.boot:spring-boot-starter-web'
 }
 
 test {

@@ -1,0 +1,4 @@
+allprojects {
+    group = 'pro.jness.experiments'
+    version = '0.0.1-SNAPSHOT'
+}
